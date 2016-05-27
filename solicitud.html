@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<link rel="navbar" href="navbar.html">
+<link rel="stylesheet" href="stylesheet/style.css">
+<object data="navbar.html" style="position: absolute; height: 100vh; width: 100vw; top: 0">
+</object>
+
+
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.modalnuevo').hide();
+            $('.radicarentrada').click(function(){
+                $('.modalnuevo').show();
+            });
+            $('.x').click(function(){
+                $('.modalnuevo').hide();
+            });
+        });
+    </script>
+</head>
+<body>
+
+
+<div class="contenidocentral">
+    <div class="busqueda">
+        <div class="lineas1"></div>
+        <label style="font-size: 60px;"> Solicitud </label>
+        <div class="lineas2"></div>
+    </div>
+
+    <div style="color: #95C11F; margin-top: 2%; font-size: 25px">
+        <label class="titulos">Número de Radicado</label>
+        <label class="titulos">Asunto</label>
+        <label class="titulos">Tipo de Documento</label><img src="img/desplegar_gris.png" class="iconoflecha">
+        <label class="titulos">Dependencia</label>
+        <label class="titulos">Estado</label>
+
+    </div>
+    <div class="cuadros"></div>
+    <div class="cuadros"></div>
+    <div class="cuadros"></div>
+    <div class="cuadros"></div>
+    <div class="cuadros"></div>
+    <div class="cuadros"></div>
+</div>
+<div style="float: right; margin-right: 7%;border-top: #95C11F solid;: #95C11F solid; color:#95C11F; font-size: 30px; margin-bottom: 0%;" class="radicarentrada">
+    <label>HACER SOLICITUD</label>
+</div>
+<div class="modalnuevo">
+    <div style="position: absolute; width: 100%; height: 100%" class="x"></div>
+    <div class="fondo" style="width: 30%">
+
+        <div class="tituloactanueva">
+            <label class="act">Radicado de<br> <span class="spn">Salida</span></label>
+        </div>
+        <div class="formulario">
+            <form ng-submit="uploadPic2(adjunto)">
+
+                <select class="tipoacta" ng-model="tipoactaradicadoentrada">
+                    <option value="">Tipo de Documento</option>
+                    <option value="facturas">Facturas</option>
+                    <option value="caja menor">Caja menor</option>
+                    <option value="legalizacion">Legalización</option>
+                    <option value="solicitudes">Solicitudes</option>
+                    <option value="cuentas de cobro">Cuentas de cobro</option>
+                    <option value="pagares">Pagares</option>
+
+                </select>
+
+                <input type="text" id="departure" placeholder="DD-MM-AA" class="textbox-n fecha" ng-model="fecharadicadoentrada" />
+                <br>
+
+                <div class="lineaacta linea"></div>
+                <div class="lineafecha linea"></div>
+
+                <select class="dependencia" ng-model="dependenciaradicadoentrada">
+                    <option value="">Dependencia</option>
+                    <option value="gerencia">Gerencia </option>
+                    <option value="administrativa">Administrativa </option>
+                    <option value="ambiente fisico">Ambiente físico </option>
+                    <option value="contabilidad">Contabilidad </option>
+                    <option value="nomina ">Nómina </option>
+                    <option value="talento humano">Talento humano </option>
+
+                </select>
+
+
+                <input type="text" id="alarm" class="form-control input-small hora "  placeholder="Hora"  ng-model="horaradicadoentrada"/>
+                <!--<input type="text" class="hora" ng-model="horaradicadoentrada" placeholder="Hora" onfocus="(this.type='time')">-->
+
+                <div class="lineadependencia linea"></div>
+                <div class="lineahora linea"></div>
+
+                <div class="radicar">
+                    <label>Radicar documentos en bloque</label>
+
+                    <input id="cmn-toggle-1" class="cmn-toggle cmn-toggle-round" type="checkbox">
+                    <label for="cmn-toggle-1" style="margin-top: -3.5%; margin-left: 73.5%"></label>
+
+                </div>
+
+                <select class="empresa" ng-model="empresaradicadoentrada">
+                    <option value="">Empresa que Radica</option>
+                    <option value="ips llanos">Ips llanos</option>
+                    <option value="cafetero">Cafetero</option>
+                    <option value="norte de Santander">Norte de Santander</option>
+                    <option value="Barranquilla">Barranquilla</option>
+                    <option value="nuestra ips">Nuestra ips</option>
+                </select>
+                <div class="lineaempresa linea"></div>
+
+                <select class="responsable" ng-model="responsableradicadoentrada">
+                    <option value="" >Responsable</option>
+                    <option value="auxiliares contables">Auxiliares contables</option>
+                    <option value="auxiliares administrativos">Auxiliares administrativos</option>
+
+                </select>
+
+                <div class="linearesponsable linea"></div>
+
+                <select class="proveedor" ng-model="proveedorradicadoentrada">
+                    <option value=""> Proveedor</option>
+                    <option value="Softplus">Softplus</option>
+                    <option value="Sael">Sael</option>
+                    <option value="Cano Asociados">Cano Asociados</option>
+
+                </select>
+                <div class="lineaproveedor linea"></div>
+
+
+                <input type="text" placeholder="Nombre..." class="nombre" ng-model="nombreradicadoentrada">
+                <div class="lineanombre linea"></div>
+
+                <input type="text" placeholder="Nit..." class="nit" ng-model="nitradicadoentrada"><input type="text" placeholder="Dirección..." class="direccion" ng-model="direccionradicadoentrada">
+                <div class="lineanit linea"></div>
+                <div class="lineadireccion linea"></div>
+
+
+                <input type="text" placeholder="Asunto..." class="asunto" ng-model="asuntoradicadoentrada">
+                <div class="lineaasunto linea"></div>
+
+                <input type="text" placeholder="Medio recepción" class="recepcion" ng-model="recepcionradicadoentrada"><input type="text" placeholder="Guia..." class="guia" ng-model="guiaradicadoentrada">
+                <div class="lineanit linea"></div>
+                <div class="lineaguia linea"></div>
+
+                <div class="iconossalida">
+                    <!--<md-button class="md-fab md-fab-top-left left scanner" aria-label="Insert Drive" >-->
+                    <!--<label for="input-file-id">-->
+                    <!--<md-icon md-svg-src="/images/escanner.svg" style="width: 30px; height: 30px;"></md-icon>-->
+                    <!--</label>-->
+                    <!--<md-tooltip md-visible="demo.showTooltip" md-direction="{{demo.tipDirection}}">-->
+                    <!--Escanear-->
+                    <!--</md-tooltip>-->
+                    <!--</md-button>-->
+
+                    <!--<input ngf-select type="file" ng-model="adjunto" class="ng-hide" id="input-file-id">-->
+
+                    <!--<md-button class="md-fab md-fab-top-left left impreso" aria-label="Insert Drive" >-->
+
+                    <!--<md-icon md-svg-src="/images/impresora.svg" style="width: 30px; height: 30px;"></md-icon>-->
+
+                    <!--<md-tooltip md-visible="demo.showTooltip2" md-direction="{{demo.tipDirection2}}">-->
+                    <!--Imprimir-->
+                    <!--</md-tooltip>-->
+                    <!--</md-button>-->
+
+                    <img src="img/scanner.png" class="scanner">
+                    <img src="img/impresora.png" class="impresora">
+                    <input type="submit" value="RADICAR" class="submit">
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

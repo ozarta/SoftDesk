@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <link rel="navbar" href="navbar.html">
+    <link rel="stylesheet" href="stylesheet/style.css">
+    <object data="navbar.html" style="position: absolute; height: 100vh; width: 100vw; top: 0">
+    </object>
+    <meta charset="UTF-8">
+    <title>SoftDesk</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(document).ready(function(){
+           $('.modalnuevo').hide();
+                $('.entrada').click(function(){
+                   $('.modalnuevo').show();
+                });
+                $('.x').click(function(){
+                    $('.modalnuevo').hide();
+                });
+            $('.modalsalida').hide();
+            $('.salidadocumento').click(function(){
+                $('.modalsalida').show();
+            });
+            $('.x').click(function(){
+                $('.modalsalida').hide();
+                    });
+        });
+    </script>
+</head>
+<body>
+
+<div class="contenido">
+    <div class="nuevo">
+        <div class="lineas1new"></div>
+        <h1> Nuevos Radicados </h1>
+        <div class="lineas2new"></div>
+    </div>
+    <div class="nuevodocumento">
+        <img src="img/entrada.png" class="imgnuevo">
+            <div class="entrada">
+                <label>Entrada</label>
+            </div>
+    </div>
+    <div class="salidadocumento">
+        <img src="img/salida.png" class="imgsalida">
+        <div class="salida">
+            <label>Salida</label>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

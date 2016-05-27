@@ -1,0 +1,55 @@
+<!doctype html>
+<html ng-app="softdesk" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="stylesheet/angular.js"></script>
+    <script src="stylesheet/angular-ui-router.js"></script>
+    <script src="stylesheet/logica.js"></script>
+
+    <style>
+        body{
+            margin: 0;
+            padding:0;
+            display: flex;
+        }
+
+        .barright{
+            width: 20%;
+            height: 100vh;
+            background-image: url("img/caja_desenfoque.png");
+            background-repeat: repeat-y;
+            -webkit-box-shadow: 7px 0px 8px 0px rgba(168,166,168,1);
+            -moz-box-shadow: 7px 0px 8px 0px rgba(168,166,168,1);
+            box-shadow: 7px 0px 8px 0px rgba(168,166,168,1);
+        }
+        .conleft{
+            width: 80%;
+            height: 100vh;
+        }
+        .barratop{
+            background-color: red;
+            height: 10%;
+        }
+        .contmid{
+            background-color: blue;
+            height: 90%;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="barright">
+        <barranav> </barranav>
+    </div>
+    <div class="conleft">
+            <div class="barratop">
+                <div barrabusqueda></div>
+
+            </div>
+            <div class="contmid">
+                <div ui-view></div>
+            </div>
+    </div>
+</body>
+</html>

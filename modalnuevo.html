@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+
+    @font-face {
+        font-family: kenyan;
+        src: url("img/Fonts/kenyan_coffee_rg.ttf");
+    }
+    @font-face {
+        font-family: kenyanbd;
+        src: url("img/Fonts/kenyan_coffeerg_it.ttf");
+    }
+    body{
+        font-family: kenyan;
+        color: #555555;
+    }
+    select{
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        padding: 2px 2px 2px 2px;
+        border: none;
+        background: transparent url(img/desplegar_verde.png) no-repeat 5px center;
+        background-size: 30px;
+        background-color: white;
+        background-position: 95%;
+        border: none;
+        height: 30px;
+        font-size: 20px;
+        color: #6f6f6f;
+        margin-top: 0.5%;
+        text-align-last:center;
+        font-weight: bold;
+        font-family: kenyan;
+    }
+
+
+    .modalnuevo{
+        position: absolute;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        height: 100%;
+        top: 0%;
+        left: 0%;
+    }
+    .fondo{
+        background: url("img/caja_hoja.png");
+        background-size: 30%;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        margin-left: 40%;
+        margin-top: 0%;
+        position: absolute;
+    }
+    .tituloactanueva{
+        margin-top: 3.5%;
+        margin-left: 2%;
+        border-bottom: #95C11F solid;
+        width: 15%;
+    }
+    input{
+        border: none;
+        height: 30px;
+        font-size: 20px;
+        color: #c6c6c5;
+        margin-top: 0.5%;
+        padding-left:15px;
+        font-family: kenyan;
+        font-weight: lighter;
+    }
+
+    form{
+        margin-left: 2.5%;
+        margin-top: 0%;
+        overflow-x: hidden;
+    }
+    .tipoacta{
+        margin-top: 2%;
+        width: 15%;
+    }
+    .fecha{
+        width:8.1%;
+        margin-left: 1%;
+    }
+    .hora{
+        margin-left: 1%;
+        width: 8.2%;
+    }
+    input.cmn-toggle-round + label {
+        padding: 2px;
+        width: 60px;
+        height: 8px;
+        background-color: #dddddd;
+        -webkit-border-radius: 60px;
+        -moz-border-radius: 60px;
+        -ms-border-radius: 60px;
+        -o-border-radius: 60px;
+        border-radius: 60px;
+    }
+    input.cmn-toggle-round + label:before, input.cmn-toggle-round + label:after {
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: -11px;
+        bottom: 1px;
+        content: "";
+    }
+    input.cmn-toggle-round + label:before {
+        right: 1px;
+        background-color: rgba(0, 0, 0, 0.31);
+        -webkit-border-radius: 60px;
+        -moz-border-radius: 60px;
+        -ms-border-radius: 60px;
+        -o-border-radius: 60px;
+        border-radius: 60px;
+        -webkit-transition: background 0.4s;
+        -moz-transition: background 0.4s;
+        -o-transition: background 0.4s;
+        transition: background 0.4s;
+    }
+    input.cmn-toggle-round + label:after {
+        margin-top: -7%;
+        width: 20px;
+        height: 21px;
+        background-color: #c6c6c5;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        -ms-border-radius: 100%;
+        -o-border-radius: 100%;
+        border-radius: 100%;
+        -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        -webkit-transition: margin 0.4s;
+        -moz-transition: margin 0.4s;
+        -o-transition: margin 0.4s;
+        transition: margin 0.4s;
+    }
+    input.cmn-toggle-round:checked + label:before {
+        background-color: #c6c6c5;
+    }
+    input.cmn-toggle-round:checked + label:after {
+        margin-left: 60px;
+    }
+    .cmn-toggle {
+        position: absolute;
+        margin-left: -9999px;
+        visibility: hidden;
+    }
+    .cmn-toggle + label {
+        display: block;
+        position: relative;
+        cursor: pointer;
+        outline: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    .empresa{
+        width: 25%;
+    }
+    .proveedor{
+        width: 25%;
+    }
+    .nombre{
+        width: 24%;
+    }
+    .nit{
+        width: 9.2%;
+    }
+    .direccion{
+        width: 12.5%;
+        margin-left: 1%;
+    }
+    .asunto{
+        width: 24.2%;
+    }
+    .scanner{
+        margin-left: 5%;
+        margin-top: 0.7%;
+        width: 4%;
+    }
+    .impresora{
+        margin-left: 1%;
+        width: 3%;
+    }
+    .submit{
+        border-radius: 10px;
+        background-color: #3c3c3b;
+        color: white;
+        padding-left:2%;;
+        padding-right:2%;
+        text-align: center;
+        vertical-align: middle;
+        margin-top: -2%;
+        margin-left: 2%;
+        font-family: kenyan;
+        letter-spacing: 1px;
+    }
+    .lineaacta{
+        width: 14.5%;
+        margin-top: -0.45%;
+        margin-left: 0.5%;
+    }
+    .lineafecha{
+        width: 8.5%;
+        margin-top: -0.25%;
+        margin-left:17%;
+    }
+    .lineahora{
+        width: 8.5%;
+        margin-top: -0.4%;
+        margin-left:17.1%;
+    }
+    .lineaempresa{
+        width: 24.5%;
+        margin-top: -0.2%;
+        margin-left: 0.5%;
+    }
+    .lineaproveedor{
+        width: 24.5%;
+        margin-top: -0.2%;
+        margin-left: 0.5%;
+    }
+    .lineanombre{
+        width: 24.5%;
+        margin-top: -0.3%;
+        margin-left: 0.6%;
+    }
+    .lineanit{
+        width: 9.5%;
+        margin-top: -0.3%;
+        margin-left:0.8%;
+    }
+    .lineadireccion{
+        width: 13%;
+        margin-top: -0.5%;
+        margin-left: 12%;
+    }
+    .lineaasunto{
+        width: 24.5%;
+        margin-top: -0.2%;
+        margin-left:0.9%;
+    }
+    .radicar{
+        margin-top: 1%;
+        font-size: 25px;
+        color: #c6c6c5;
+        margin-bottom: 1%;
+    }
+    .linea{
+        height: 4px;
+        border-bottom: #c6c6c5 solid;
+        border-right: #c6c6c5 solid;
+    }
+    .act{
+        font-size: 30px;
+    }
+    .spn{
+        font-size: 50px;
+    }
+    .dependencia{
+        width: 15%;
+    }
+
+    .lineadependencia{
+        width: 14.5%;
+        margin-top: -0.35%;
+        margin-left: 0.5%;
+    }
+    .responsable{
+        width: 25%;
+    }
+    .recepcion{
+        width: 9.2%;
+    }
+    .guia{
+        width: 13%;
+        margin-left: 1%;
+    }
+    .linearesponsable{
+        width: 24.5%;
+        margin-top: -0.2%;
+        margin-left: 0.5%;
+    }
+    .lineaguia{
+        width: 13.5%;
+        margin-top: -0.5%;
+        margin-left: 12%;
+    }
+</style>
+<body>
+<div class="modalnuevo">
+    <div style="position: absolute; width: 100%; height: 100%" class="x"></div>
+    <div class="fondo">
+        <div class="tituloactanueva">
+            <label class="act">Radicado de<br> <span class="spn">ENTRADA</span></label>
+        </div>
+        <div class="formulario">
+            <form>
+
+                <select class="tipoacta">
+                    <option>Tipo de Documento</option>
+                </select>
+                <input placeholder="DD-MM-AA" class="textbox-n fecha" type="text" onfocus="(this.type='date')"  id="date">
+                <br>
+
+                <div class="lineaacta linea"></div>
+                <div class="lineafecha linea"></div>
+
+                <select class="dependencia">
+                    <option>Dependencia</option>
+                </select>
+                <input type="text" class="hora" placeholder="Hora" onfocus="(this.type='time')">
+                <div class="lineadependencia linea"></div>
+                <div class="lineahora linea"></div>
+                <div class="radicar">
+                    <label>Radicar documentos en bloque</label>
+
+                    <input id="cmn-toggle-1" class="cmn-toggle cmn-toggle-round" type="checkbox">
+                    <label for="cmn-toggle-1" style="margin-top: -1%; margin-left: 20.5%"></label>
+
+                </div>
+
+                <select class="empresa">
+                    <option>Empresa que Radica</option>
+                </select>
+
+                <div class="lineaempresa linea"></div>
+
+                <select class="responsable">
+                    <option>Responsable</option>
+                </select>
+
+                <div class="linearesponsable linea"></div>
+
+                <select class="proveedor">
+                    <option>Proveedor</option>
+                </select>
+                <div class="lineaproveedor linea"></div>
+
+                <input type="text" placeholder="Nombre..." class="nombre">
+                <div class="lineanombre linea"></div>
+
+                <input type="text" placeholder="Nit..." class="nit"><input type="text" placeholder="Dirección..." class="direccion">
+                <div class="lineanit linea"></div>
+                <div class="lineadireccion linea"></div>
+
+
+                <input type="text" placeholder="Asunto..." class="asunto">
+                <div class="lineaasunto linea"></div>
+
+                <input type="text" placeholder="Medio recepción" class="recepcion"><input type="text" placeholder="Guia..." class="guia">
+                <div class="lineanit linea"></div>
+                <div class="lineaguia linea"></div>
+
+
+
+                <img src="img/scanner.png" class="scanner">
+                <img src="img/impresora.png" class="impresora">
+                <input type="submit" value="RADICAR" class="submit">
+            </form>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
