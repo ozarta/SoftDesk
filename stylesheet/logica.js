@@ -32,5 +32,15 @@ app.config(['$stateProvider','$urlRouterProvider',function (stateProvider,urlRou
             templateUrl: 'stiker.html'
 
         })
+        .state('nuevo',{
+            url: '/nuevo',
+            templateUrl: 'new.html'
+
+        })
+        .state('busqueda',{
+            url: '/busqueda',
+            templateUrl: 'busqueda.html'
+
+        })
 }]);
 
