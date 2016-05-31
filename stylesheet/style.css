@@ -89,6 +89,67 @@ body{
     margin-top: 55px;
 }
 
+.titulodigitalizado{
+    font-size: 21px;
+    display: inline-flex;
+    width: 77%;
+    margin-left: 27%;
+}
+.titulosticker{
+    font-size: 21px;
+    display: inline-flex;
+    width: 80%;
+    margin-left: 21%;
+}
+.sticker
+{
+    height: 400px;
+    width: 350px;
+    margin: auto;
+    text-align: left;
+    font-size: 20px;
+    background-color: #F6F6F6;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.imgsticker
+{
+    width: 85%;
+    margin: auto;
+    margin-top: 20px;
+}
+.cuadrofondosticker
+{
+    background-color: #dadada;
+    height: 400px;
+    width: 350px;
+    margin: auto;
+    position: absolute;
+    z-index: -1;
+    left: 664px;
+    border-radius: 22px;
+    margin-top: 6px;
+}
+
+.respuestasticker{
+    margin-top: 15px;
+    color: black;
+}
+.contenidosticker
+{
+    margin-left: 50px;
+}
+.lineas1new{
+    border-top: 0.15cm #95C11F solid ;
+    width: 50px;
+    margin-top: 43px;
+}
+.lineas2new{
+    border-top: 0.15cm #95C11F solid ;
+    width: 50px;
+    margin-top: 43px;
+}
+
 .iconoflecha{
     width: 2.5%;
     margin-left: 1%;
@@ -503,6 +564,16 @@ input.cmn-toggle-round:checked + label:after {
 }
 
 
+.nuevo{
+    margin-left: 27%;
+    font-size: 30px;
+    margin-top:5.5%;
+    position: relative;
+    display: inline-flex;
+    text-align: center;
+}
+
+
 
 
 .salidadocumento{
@@ -609,7 +680,7 @@ body{
     border-top-color: #c6c6c5;
 }
 .icononuevo{
-    width: 8%;
+    width: 7%;
     float: right;
     margin-top: 2%;
     margin-right: 2%;
@@ -624,6 +695,16 @@ body{
     height: 8vh;
 }
 
+.contenido{
+    border: solid;
+    margin: auto;
+    width: 1000px;
+    box-sizing: border-box;
+}
+.imgdigitalizando{
+    width: 39%;
+    margin-left: 34%;
+}
 
 /*@media (max-width: 1400px) {*/
     /*.imgbuscar{*/
