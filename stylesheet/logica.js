@@ -42,5 +42,30 @@ app.config(['$stateProvider','$urlRouterProvider',function (stateProvider,urlRou
             templateUrl: 'busqueda.html'
 
         })
+        .state('busquedaexterno',{
+            url: '/busquedaextero',
+            templateUrl: 'busqueda_Externo.html'
+
+        })
+        .state('entrada',{
+            url: '/entrada',
+            templateUrl: 'entrada.html'
+
+        })
+        .state('salida',{
+            url: '/salida',
+            templateUrl: 'salida.html'
+
+        })
+        .state('solicitud',{
+            url: '/solicitud',
+            templateUrl: 'solicitud.html'
+
+        })
+        .state('archivado',{
+            url: '/archivado',
+            templateUrl: 'archivado.html'
+
+        })
 }]);
 

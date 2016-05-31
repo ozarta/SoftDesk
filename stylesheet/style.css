@@ -50,11 +50,14 @@ body{
 
 
 .busqueda{
-    margin-top: 9%;
     font-size: 21px;
-    margin-left: -0.5%;
+    display: inline-flex;
+    width: 100%;
 }
-
+h1{
+    margin-left: 25px;
+    margin-right: 25px;
+}
 input{
     font-family: kenyan;
 }
@@ -68,31 +71,22 @@ body{
 }
 
 .contenidocentral{
-    border: solid red 1px;
-    display: inline-block;
-    width: 80%;
+    border: solid;
     margin: auto;
+    width: 1000px;
+    box-sizing: border-box;
 }
 /**/
-.busqueda{
-    margin-top: 8.5%;
-    font-size: 21px;
-    margin-left: 1%;
 
-}
 .lineas1{
     border-top: 0.15cm #95C11F solid ;
-    width: 3%;
-    position: absolute;
-    left: 26%;
-    top: 23.5%;
+    width: 50px;
+    margin-top: 55px;
 }
 .lineas2{
     border-top: 0.15cm #95C11F solid ;
-    width: 3%;
-    position: absolute;
-    left: 40.5%;
-    top: 23.5%;
+    width: 50px;
+    margin-top: 55px;
 }
 .lineas1new{
     border-top: 0.15cm #95C11F solid ;
@@ -114,8 +108,8 @@ body{
 }
 .cuadros{
     border-top:0.05cm solid;
-    margin-top: 1%;
-    width: 90%;
+    margin-top: 0.9%;
+    width: 100%;
     height: 50px;
 }
 .titulos{
@@ -655,22 +649,26 @@ body{
     font-size: 30px;
     margin-bottom: 0%;
     position: relative;
+    margin-top: 15px;
 }
 .radicarentrada:hover{
     color: #c6c6c5;
     border-top-color: #c6c6c5;
 }
 .icononuevo{
-    width: 4%;
+    width: 8%;
     float: right;
     margin-top: 2%;
-    margin-right: 10%;
+    margin-right: 2%;
+    height: 8vh;
+    margin-left: 46%;
 }
 .icononuevo2{
-    width: 6.5%;
+    width: 8%;
     float: right;
     margin-top: 2%;
     margin-right: 5%;
+    height: 8vh;
 }
 .contenido{
     border: solid;
