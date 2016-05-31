@@ -67,5 +67,10 @@ app.config(['$stateProvider','$urlRouterProvider',function (stateProvider,urlRou
             templateUrl: 'archivado.html'
 
         })
+        .state('digitalizado',{
+            url: '/digitalizado',
+            templateUrl: 'digitalizado.html'
+
+        })
 }]);
 
