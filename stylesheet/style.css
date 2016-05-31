@@ -92,17 +92,61 @@ body{
     font-size: 21px;
     display: inline-flex;
     width: 77%;
-    margin-left: 23%;
+    margin-left: 27%;
+}
+.titulosticker{
+    font-size: 21px;
+    display: inline-flex;
+    width: 80%;
+    margin-left: 21%;
+}
+.sticker
+{
+    height: 400px;
+    width: 350px;
+    margin: auto;
+    text-align: left;
+    font-size: 20px;
+    background-color: #F6F6F6;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.imgsticker
+{
+    width: 85%;
+    margin: auto;
+    margin-top: 20px;
+}
+.cuadrofondosticker
+{
+    background-color: #dadada;
+    height: 400px;
+    width: 350px;
+    margin: auto;
+    position: absolute;
+    z-index: -1;
+    left: 664px;
+    border-radius: 22px;
+    margin-top: 6px;
+}
+
+.respuestasticker{
+    margin-top: 15px;
+    color: black;
+}
+.contenidosticker
+{
+    margin-left: 50px;
 }
 .lineas1new{
     border-top: 0.15cm #95C11F solid ;
     width: 50px;
-    margin-top: 55px;
+    margin-top: 43px;
 }
 .lineas2new{
     border-top: 0.15cm #95C11F solid ;
     width: 50px;
-    margin-top: 55px;
+    margin-top: 43px;
 }
 .iconoflecha{
     width: 2.5%;
