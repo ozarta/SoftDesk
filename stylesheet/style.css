@@ -52,6 +52,7 @@ body{
 .busqueda{
     font-size: 21px;
     display: inline-flex;
+    width: 100%;
 }
 h1{
     margin-left: 25px;
@@ -648,22 +649,26 @@ body{
     font-size: 30px;
     margin-bottom: 0%;
     position: relative;
+    margin-top: 15px;
 }
 .radicarentrada:hover{
     color: #c6c6c5;
     border-top-color: #c6c6c5;
 }
 .icononuevo{
-    width: 4%;
+    width: 8%;
     float: right;
     margin-top: 2%;
-    margin-right: 10%;
+    margin-right: 2%;
+    height: 8vh;
+    margin-left: 46%;
 }
 .icononuevo2{
-    width: 6.5%;
+    width: 8%;
     float: right;
     margin-top: 2%;
     margin-right: 5%;
+    height: 8vh;
 }
 .contenido{
     border: solid;
