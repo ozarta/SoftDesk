@@ -562,10 +562,12 @@ input.cmn-toggle-round:checked + label:after {
 }
 
 .nuevo{
-    /*margin-left: 47%;*/
+    margin-left: 27%;
     font-size: 30px;
     margin-top:5.5%;
     position: relative;
+    display: inline-flex;
+    text-align: center;
 }
 
 .imgnuevo{
