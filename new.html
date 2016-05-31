@@ -1,62 +1,125 @@
-<!DOCTYPE html>
-<html lang="es">
+<style>
+    .contenido{
+        /*border: solid;*/
+        margin: auto;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .nuevo{
+        /*border: solid red 1px;*/
+        font-size: 30px;
+        display: flex;
+        margin-top: 1%;
+    }
+    .lineas1new{
+        border-top: 0.15cm #95C11F solid ;
+        width: 5%;
+        display: inline-block;
+    }
+    .newradic{
+        /*border: solid blue 1px;*/
+        margin: auto;
+        width: 50%;
+    }
+    .lineas2new{
+        border-top: 0.15cm #95C11F solid ;
+        width: 5%;
+        display: inline-block;
+    }
+    .tittleradica{
+        font-family:kenyan;
+        font-size:60px;
+        text-align: center;
+        margin-top:0;
+        margin-bottom: 0;
+    }
+    .inputouput{
+        /*border: solid red 1px;*/
+        display: flex;
+    }
+    .nuevodocumento{
+        /*border: solid blue 1px;*/
+        cursor: pointer;
+        width: 50%;
+        height: 70vh;
+        position: relative;
+    }
+    .entrada:hover{
+        transform: scale(1.1 , 1.1);
+    }
+    .fixedimages{
+        border: solid black 1px;
+        margin: auto;
+    }
+    .imgnuevo{
+        height: 90%;
+        margin-left:17%;
+    }
+    .entrada{
+        position: relative;
+        /*border: solid green 1px;*/
+        margin: auto;
+        top: 10%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 30vw;
+        height: 50vh;
+    }
 
-<head>
-    <link rel="stylesheet" href="stylesheet/style.css">
-    <meta charset="UTF-8">
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script>
-        $(document).ready(function(){
-           $('.modalnuevo').hide();
-                $('.entrada').click(function(){
-                   $('.modalnuevo').show();
-                });
-                $('.x').click(function(){
-                    $('.modalnuevo').hide();
-                });
-            $('.modalsalida').hide();
-            $('.salidadocumento').click(function(){
-                $('.modalsalida').show();
-            });
-            $('.x').click(function(){
-                $('.modalsalida').hide();
-                    });
-        });
-    </script>
-</head>
-<body>
+    .btnentrada{
+        bottom: 0;
+        /*border: solid black;*/
+
+    }
+    .txtentrada{
+        width: 60%;
+        background-color: #95C11F;
+        font-size: 35px;
+        text-align: center;
+        color: white;
+        border-radius: 10px;
+        /*padding-top: 1%;*/
+        /*padding-left: 1%;*/
+        /*padding-bottom: 1%;*/
+        /*padding-right: 1%;*/
+        margin: auto;
+    }
+    .contimgentra{
+        /*border: solid aqua 1px;*/
+        height: 35vh;
+    }
+</style>
+
 
 <div class="contenido">
     <div class="nuevo">
-
         <div class="lineas1new"></div>
-        <h1 style="text-align: center;"> Nuevos Radicados </h1>
+        <div class="newradic"> <p class="tittleradica">Nuevos Radicados </p></div>
         <div class="lineas2new"></div>
     </div>
 
-    <div style="display: flex;margin-top: 100px">
-        <div class="nuevodocumento">
-            <div class="fixedimages">
-            <img src="img/entrada.png" class="imgnuevo">
+    <div class="inputouput" >
+            <div class="nuevodocumento">
+                 <div class="entrada">
+                     <div class="contimgentra"><img src="img/entrada.png" class="imgnuevo"></div>
+                     <div class="btnentrada"><p class="txtentrada">Entrada</p></div>
+                 </div>
+            </div>
+
+            <div class="nuevodocumento">
                 <div class="entrada">
-                    <label>Entrada</label>
+                    <div class="contimgentra"><img src="img/salida.png" class="imgnuevo"></div>
+                    <div class="btnentrada"><p class="txtentrada">Salida</p></div>
                 </div>
-                </div>
-
-        </div>
-
-        <div class="salidadocumento">
-            <div class="fixedimages">
-            <img src="img/salida.png" class="imgsalida">
-            <div class="salida">
-                <label>Salida</label>
             </div>
-            </div>
-        </div>
-
+            <!--<div class="salidadocumento">-->
+                <!--<div class="fixedimages">-->
+                <!--<img src="img/salida.png" class="imgsalida">-->
+                <!--<div class="salida">-->
+                    <!--<label>Salida</label>-->
+                <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
     </div>
 </div>
-
-
-</body>
-</html>

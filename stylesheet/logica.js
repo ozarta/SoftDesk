@@ -16,6 +16,7 @@ app.directive('barrabusqueda',function () {
 
 app.config(['$stateProvider','$urlRouterProvider',function (stateProvider,urlRouterProvider) {
     stateProvider
+        
         .state('nradicado',{
             url: '/nradicado',
             template: '<h1 style="margin: 0">Componente prueba</h1>'
