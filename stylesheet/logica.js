@@ -16,17 +16,6 @@ app.directive('barrabusqueda',function () {
 
 app.config(['$stateProvider','$urlRouterProvider',function (stateProvider,urlRouterProvider) {
     stateProvider
-        .state('nradicado',{
-            url: '/nradicado',
-            template: '<h1 style="margin: 0">Componente prueba</h1>'
-
-        })
-        .state('zz',{
-            url: '/zz',
-            template: '<h1 style="margin: 0">Componente 3</h1>'
-
-        })
-
         .state('stiker',{
             url: '/stiker',
             templateUrl: 'stiker.html'
@@ -43,7 +32,7 @@ app.config(['$stateProvider','$urlRouterProvider',function (stateProvider,urlRou
 
         })
         .state('busquedaexterno',{
-            url: '/busquedaextero',
+            url: '/busquedaexterno',
             templateUrl: 'busqueda_Externo.html'
 
         })

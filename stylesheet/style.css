@@ -110,6 +110,7 @@ body{
     background-color: #F6F6F6;
     border-radius: 20px;
     margin-top: 20px;
+    position: relative;
 }
 .imgsticker
 {
@@ -125,7 +126,7 @@ body{
     margin: auto;
     position: absolute;
     z-index: -1;
-    left: 664px;
+    left: 4px;
     border-radius: 22px;
     margin-top: 6px;
 }
@@ -171,7 +172,7 @@ body{
     left: 0;
 }
 .fondo{
-    background: url("/img/caja_hoja.png");
+    background-image: url("/img/caja_hoja.png");
     background-size: 100%;
     background-repeat: no-repeat;
     width: 100%;
