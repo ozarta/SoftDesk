@@ -89,7 +89,114 @@
         /*border: solid aqua 1px;*/
         height: 35vh;
     }
+
+    .modal{
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.85);
+        /*DRY don't repeat yourself*/
+        /*GL good luck*/
+        /*hf have fun*/
+        /*nd nice day*/
+        /*gg Good Game*/
+        /*API*/
+        /*izi easy*/
+        /*lol*/
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
+    .hoja{
+        background-image: url("img/caja_hoja.png");
+        background-repeat: no-repeat;
+        background-size: 75%;
+        margin: auto;
+        margin-left:35%;
+        width: 40%;
+        height: 94%;
+        margin-top: 2%;
+        position: relative;
+        border: solid red 1px;
+    }
+    .imghoja{
+        position: relative;
+        height: 95%;
+        top: 2vh;
+        left: 13%;
+    }
+    .conthoja{
+        position: relative;
+        margin-top:0%;
+        width: 75%;
+        border: solid blue 1px;
+    }
+    .tituloactanueva{
+        border-bottom: #95C11F solid;
+        width: 45%;
+        margin-left: 6%;
+        margin-top: 10%;
+    }
+    .t1{
+        font-size: 2.7vw;
+        margin: 0;
+        font-family:kenyan;
+    }
+    .t2{
+        font-size: 5vw;
+        margin: 0;
+        margin-top:-6%;
+        font-family:kenyan;
+    }
+    .formulario{
+        border: solid black 1px;
+        width: 86%;
+        margin-left: 7%;
+        margin-top: 2%;
+    }
+    select{
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        padding: 2px;
+        border: none;
+        background: transparent url(/img/desplegar_verde.png) no-repeat 5px center;
+        background-size: 30px;
+        background-color: white;
+        background-position: 95%;
+        border: none;
+        height: 45px;
+        font-size: 20px;
+        color: #6f6f6f;
+        margin-top: 1%;
+        text-align-last:center;
+        font-weight: bold;
+        font-family: kenyan;
+    }
 </style>
+
+<div class="modal"  ng-show="entrada == true">
+    <!--<div style="width: 400px;height: 400px;background-color: #fff;" ng-click="entrada = false"></div>-->
+    <div class="hoja">
+        <!--<img src="img/caja_hoja.png" class="imghoja">-->
+        <div class="conthoja">
+            <div class="tituloactanueva">
+                <p class="t1">Radicado de</p>
+                <p class="t2">Entrada</p>
+            </div>
+            <div class="formulario">
+                <div class="typedoc">
+                    <select placeholder="hola">
+                        <option disabled selected>Tipo de Documento</option>
+                        <option >Saab</option>
+                        <option >Mercedes</option>
+                        <option >Audi</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 <div class="contenido">
@@ -101,7 +208,7 @@
 
     <div class="inputouput" >
         <div class="nuevodocumento">
-            <div class="entrada">
+            <div class="entrada" ng-click="entrada=true">
                 <div class="contimgentra"><img src="img/entrada.png" class="imgnuevo"></div>
                 <div class="btnentrada"><p class="txtentrada">Entrada</p></div>
             </div>

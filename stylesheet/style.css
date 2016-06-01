@@ -48,12 +48,6 @@ body{
 }
 
 
-
-.busqueda{
-    font-size: 21px;
-    display: inline-flex;
-    width: 100%;
-}
 h1{
     margin-left: 25px;
     margin-right: 25px;
@@ -70,12 +64,6 @@ body{
     margin-top: 0;
 }
 
-.contenidocentral{
-    border: solid;
-    margin: auto;
-    width: 1000px;
-    box-sizing: border-box;
-}
 /**/
 
 .lineas1{
@@ -183,25 +171,7 @@ body{
     position: absolute;
 }
 
-select{
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    padding: 2px 2px 2px 2px;
-    border: none;
-    background: transparent url(/img/desplegar_verde.png) no-repeat 5px center;
-    background-size: 30px;
-    background-color: white;
-    background-position: 95%;
-    border: none;
-    height: 45px;
-    font-size: 20px;
-    color: #6f6f6f;
-    margin-top: 1%;
-    text-align-last:center;
-    font-weight: bold;
-    font-family: kenyan;
-}
+
 
 .tituloactanueva{
     margin-top: 15%;
@@ -563,19 +533,6 @@ input.cmn-toggle-round:checked + label:after {
     margin-left: 1%;
 }
 
-
-.nuevo{
-    margin-left: 27%;
-    font-size: 30px;
-    margin-top:5.5%;
-    position: relative;
-    display: inline-flex;
-    text-align: center;
-}
-
-
-
-
 .salidadocumento{
     cursor: pointer;
     width: 50%;
@@ -695,12 +652,6 @@ body{
     height: 8vh;
 }
 
-.contenido{
-    border: solid;
-    margin: auto;
-    width: 1000px;
-    box-sizing: border-box;
-}
 .imgdigitalizando{
     width: 39%;
     margin-left: 34%;
