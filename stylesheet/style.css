@@ -128,11 +128,8 @@ body{
     margin: auto;
     position: absolute;
     z-index: -1;
-<<<<<<< HEAD
     left: 6px;
-=======
     left: 4px;
->>>>>>> 97212afc9aa629b6bd0f1dddd1b2541b2a9bbe65
     border-radius: 22px;
     margin-top: 6px;
 }
