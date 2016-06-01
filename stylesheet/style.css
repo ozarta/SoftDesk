@@ -12,6 +12,19 @@
     width: 272px;
     margin-left: 5%;
 }
+.busqueda{
+    font-size: 40px;
+    display: inline-flex;
+    width: 100%;
+}.contenidocentral{
+     /*border: solid;*/
+     margin: auto;
+     width: 90%;
+     box-sizing: border-box;
+ }
+.tituloss{
+    margin-top: 30px;
+}
 .linea1{
     width: 75%;
     border-top: 0.05cm white solid;
@@ -91,14 +104,15 @@ body{
 }
 .sticker
 {
-    height: 400px;
-    width: 350px;
+    height: 60vh;
+    width: 25.7vw;
     margin: auto;
     text-align: left;
-    font-size: 20px;
+    font-size: 3vh;
     background-color: #F6F6F6;
     border-radius: 20px;
     margin-top: 20px;
+    position: relative;
 }
 .imgsticker
 {
@@ -109,12 +123,12 @@ body{
 .cuadrofondosticker
 {
     background-color: #dadada;
-    height: 400px;
-    width: 350px;
+    height: 60vh;
+    width: 25.7vw;
     margin: auto;
     position: absolute;
     z-index: -1;
-    left: 664px;
+    left: 6px;
     border-radius: 22px;
     margin-top: 6px;
 }

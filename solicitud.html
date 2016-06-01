@@ -24,7 +24,7 @@
 <div class="contenidocentral">
     <div class="busqueda">
         <div class="lineas1"></div>
-        <label style="font-size: 60px;margin-top: 17px"> Solicitud </label>
+        <label class="tituloss"> Solicitud </label>
         <div class="lineas2"></div>
     </div>
 
@@ -43,10 +43,10 @@
     <div class="cuadros"></div>
     <div class="cuadros"></div>
 </div>
-<div style="float: right; margin-right: 7%;border-top: #95C11F solid;: #95C11F solid; color:#95C11F; font-size: 30px; margin-bottom: 0%;" class="radicarentrada">
+<div style="float: right; margin-right: 7%;border-top: #95C11F solid;: #95C11F solid; color:#95C11F; font-size: 30px; margin-bottom: 0%;" class="radicarentrada" ng-click="entrada=true">
     <label>HACER SOLICITUD</label>
 </div>
-<div class="modalnuevo" style="display: none">
+<div class="modalnuevo" ng-show="entrada == true">
     <div style="position: absolute; width: 100%; height: 100%" class="x"></div>
     <div class="fondo" style="width: 30%">
 
