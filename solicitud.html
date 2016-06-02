@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
+
 <link rel="navbar" href="navbar.html">
 <link rel="stylesheet" href="stylesheet/style.css">
 
+
     <meta charset="utf-8">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="stylesheet/jquery-2.2.3.min.js"></script>
     <script>
         $(document).ready(function(){
             $('.modalnuevo').hide();
@@ -16,15 +16,107 @@
                 $('.modalnuevo').hide();
             });
         });
-    </script>
-</head>
-<body>
 
+    </script>
+<style>
+    .modalnuevo{
+        position: fixed;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.3);
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+    }
+    .fondo{
+        background-image: url("img/caja_hoja.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        margin-left: 40%;
+        margin-top: 1vh;
+        position: absolute;
+    }
+    .tituloactanueva{
+        margin-top: 15%;
+        margin-left: 2%;
+        border-bottom: #95C11F solid;
+        width: 62%;
+    }
+    /*input{*/
+    /*border: none;*/
+    /*height: 45px;*/
+    /*font-size: 20px;*/
+    /*color: #c6c6c5;*/
+    /*margin-top: 1%;*/
+    /*padding-left:15px;*/
+    /*}*/
+
+    form{
+        margin-left: 3%;
+        margin-top: 0%;
+        overflow-x: hidden;
+    }
+    .tipoacta{
+        margin-top: 2%;
+        width: 17.5vw;
+    }
+    .hora{
+        margin-left: 1%;
+        width: 8.7vw;
+    }
+    .act{
+        font-size: 37px;
+    }
+    .spn {
+        font-size: 9vh;
+        float: left;
+    }
+    .formulario
+    {
+        width: 100%;
+        margin-top: 11vh;
+        margin-left: 3%;
+    }
+    input{
+        margin-top: 1%;
+        font-size: 2vh;
+        height: 4vh;
+        border: none;
+        padding-left: 1vw;
+    }
+    select{
+        margin-top: 1%;
+        font-family: kenyan;
+        color: #9C9C9C;
+        font-size: 2vh;
+        height: 4vh;
+        background: url("img/desplegar_verde.png");
+        background-size: 20px;
+        background-repeat: no-repeat;
+        border: none;
+        -webkit-appearance: none;
+        background-position-x: 97%;
+        background-position-y: 10px;
+        background-color: white;
+        padding-right: 5px;
+        padding-left: 15px;
+    }
+    .lineahora{
+        width: 8.6vw;
+        margin-top: -2%;
+        margin-left: 63%;
+    }
+    .titulos{
+        margin-left: 7%;
+    }
+</style>
 
 <div class="contenidocentral">
     <div class="busqueda">
         <div class="lineas1"></div>
-        <label style="font-size: 60px;margin-top: 17px"> Solicitud </label>
+        <label class="tituloss"> Solicitud </label>
         <div class="lineas2"></div>
     </div>
 
@@ -43,12 +135,16 @@
     <div class="cuadros"></div>
     <div class="cuadros"></div>
 </div>
-<div style="float: right; margin-right: 7%;border-top: #95C11F solid;: #95C11F solid; color:#95C11F; font-size: 30px; margin-bottom: 0%;" class="radicarentrada">
+<div style="float: right; margin-right: 7%;border-top: #95C11F solid;: #95C11F solid; color:#95C11F; font-size: 30px; margin-bottom: 0%;" class="radicarentrada" ng-click="entrada=true">
     <label>HACER SOLICITUD</label>
 </div>
-<div class="modalnuevo" style="display: none">
+
+<div class="modalnuevo" ng-show="entrada == true">
+
+<div class="modalnuevo" style="display: block">
+
     <div style="position: absolute; width: 100%; height: 100%" class="x"></div>
-    <div class="fondo" style="width: 30%">
+    <div class="fondo" style="width: 31.5%">
 
         <div class="tituloactanueva">
             <label class="act">Radicado de<br> <span class="spn">Salida</span></label>
@@ -95,7 +191,7 @@
                     <label>Radicar documentos en bloque</label>
 
                     <input id="cmn-toggle-1" class="cmn-toggle cmn-toggle-round" type="checkbox">
-                    <label for="cmn-toggle-1" style="margin-top: -3.5%; margin-left: 73.5%"></label>
+                    <label for="cmn-toggle-1" style="margin-top: -5.5%; margin-left: 73.5%;margin-bottom: 3%;"></label>
 
                 </div>
 
@@ -174,5 +270,4 @@
 
     </div>
 </div>
-</body>
-</html>
+</div>
