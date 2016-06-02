@@ -129,7 +129,7 @@
         position: relative;
         margin-top:0%;
         width: 75%;
-        border: solid blue 1px;
+        /*border: solid blue 1px;*/
     }
     .tituloactanueva{
         border-bottom: #95C11F solid;
@@ -149,7 +149,7 @@
         font-family:kenyan;
     }
     .formulario{
-        border: solid black 1px;
+        /*border: solid black 1px;*/
         width: 86%;
         margin-left: 7%;
         margin-top: 2%;
@@ -158,41 +158,94 @@
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none;
-        padding: 2px;
-        border: none;
-        background: transparent url(/img/desplegar_verde.png) no-repeat 5px center;
-        background-size: 30px;
-        background-color: white;
+        background: url(img/desplegar_verde.png) no-repeat right #ddd;
+        background-size: 20px;
         background-position: 95%;
+        background-color: white;
         border: none;
-        height: 45px;
-        font-size: 20px;
+        font-size: 1.4vw;
         color: #6f6f6f;
-        margin-top: 1%;
         text-align-last:center;
-        font-weight: bold;
         font-family: kenyan;
+        height: 5vh;
+        width: 100%;
     }
+    .typedoc{
+        width: 54%;
+        -webkit-box-shadow: 13px 13px 0px -10px rgba(0,0,0,0.25);
+        -moz-box-shadow: 13px 13px 0px -10px rgba(0,0,0,0.25);
+        box-shadow: 13px 13px 0px -10px rgba(0,0,0,0.25);
+        display: inline-block;
+        margin-bottom:5%;
+    }
+    .boxfecha{
+        width: 40%;
+        margin-left: 5%;
+        -webkit-box-shadow: 14px 13px 0px -10px rgba(0,0,0,0.25);
+        -moz-box-shadow: 14px 13px 0px -10px rgba(0,0,0,0.25);
+        box-shadow: 14px 13px 0px -10px rgba(0,0,0,0.25);
+        display: inline-block;
+    }
+    .introfecha{
+        border: none;
+        font-size: 1.4vw;
+        text-align: center;
+        height: 5vh;
+        width: 100%;
+        outline: 0;
+    }
+    .radicar{
+        font-size: 1.4vw;
+        color: #c6c6c5;
+        margin-bottom: 1%;
+        border: solid black 1px;
+    }
+
+
 </style>
 
-<div class="modal"  ng-show="entrada == true">
+<div class="modal"  ng-show="entrada == true" ng-init="entrada = true ">
     <!--<div style="width: 400px;height: 400px;background-color: #fff;" ng-click="entrada = false"></div>-->
     <div class="hoja">
-        <!--<img src="img/caja_hoja.png" class="imghoja">-->
         <div class="conthoja">
             <div class="tituloactanueva">
                 <p class="t1">Radicado de</p>
                 <p class="t2">Entrada</p>
             </div>
             <div class="formulario">
+
                 <div class="typedoc">
-                    <select placeholder="hola">
+                    <select style=" outline: 0;">
                         <option disabled selected>Tipo de Documento</option>
                         <option >Saab</option>
                         <option >Mercedes</option>
                         <option >Audi</option>
                     </select>
                 </div>
+
+                <div class="boxfecha">
+                    <input type="date" class="introfecha">
+                </div>
+
+                <div class="typedoc">
+                    <select style=" outline: 0;">
+                        <option disabled selected>Tipo de Documento</option>
+                        <option >Saab</option>
+                        <option >Mercedes</option>
+                        <option >Audi</option>
+                    </select>
+                </div>
+
+                <div class="boxfecha">
+                    <input type="time" placeholder="Hora" class="introfecha" >
+                </div>
+
+                <div class="radicar">
+                    <label style="border: solid green 1px; display: inline-block">Radicar documentos en bloque</label>
+                    <input id="cmn-toggle-1" class="cmn-toggle cmn-toggle-round" type="checkbox">
+                    <label for="cmn-toggle-1" style="display: inline-block; margin-left:28%" ></label>
+                </div>
+
             </div>
         </div>
     </div>

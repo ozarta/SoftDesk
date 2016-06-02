@@ -203,7 +203,7 @@ form{
 }
 input.cmn-toggle-round + label {
     padding: 2px;
-    width: 60px;
+    width: 50px;
     height: 8px;
     background-color: #dddddd;
     -webkit-border-radius: 60px;
@@ -215,7 +215,7 @@ input.cmn-toggle-round + label {
 input.cmn-toggle-round + label:before, input.cmn-toggle-round + label:after {
     display: block;
     position: absolute;
-    top: 0px;
+    top: 0;
     left: -11px;
     bottom: 1px;
     content: "";
@@ -257,6 +257,10 @@ input.cmn-toggle-round:checked + label:before {
 input.cmn-toggle-round:checked + label:after {
     margin-left: 60px;
 }
+
+
+
+
 .cmn-toggle {
     position: absolute;
     margin-left: -9999px;
@@ -358,12 +362,7 @@ input.cmn-toggle-round:checked + label:after {
     margin-top: -0.1%;
     margin-left:0.5%;
 }
-.radicar{
-    margin-top: 1%;
-    font-size: 30px;
-    color: #c6c6c5;
-    margin-bottom: 1%;
-}
+
 .linea{
     height: 4px;
     border-bottom: #c6c6c5 solid;
@@ -592,9 +591,6 @@ input.cmn-toggle-round:checked + label:after {
     transform: scale(1.2,1.2);
 }
 
-input{
-    font-family: kenyan;
-}
 a{
     text-decoration: none;
     color:  #95C11F;
