@@ -16,7 +16,7 @@ app.directive('barrabusqueda',function () {
 
 app.config(['$stateProvider','$urlRouterProvider',function (stateProvider,urlRouterProvider) {
     stateProvider
-<<<<<<< HEAD
+
         
         .state('nradicado',{
             url: '/nradicado',
@@ -28,9 +28,6 @@ app.config(['$stateProvider','$urlRouterProvider',function (stateProvider,urlRou
             template: '<h1 style="margin: 0">Componente 3</h1>'
 
         })
-
-=======
->>>>>>> 97212afc9aa629b6bd0f1dddd1b2541b2a9bbe65
         .state('stiker',{
             url: '/stiker',
             templateUrl: 'stiker.html'
