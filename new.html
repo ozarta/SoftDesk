@@ -136,14 +136,15 @@
         width: 45%;
         margin-left: 6%;
         margin-top: 10%;
+        margin-bottom: 4%;
     }
     .t1{
-        font-size: 2.7vw;
+        font-size: 2.5vw;
         margin: 0;
         font-family:kenyan;
     }
     .t2{
-        font-size: 5vw;
+        font-size: 4.8vw;
         margin: 0;
         margin-top:-6%;
         font-family:kenyan;
@@ -176,8 +177,71 @@
         -moz-box-shadow: 13px 13px 0px -10px rgba(0,0,0,0.25);
         box-shadow: 13px 13px 0px -10px rgba(0,0,0,0.25);
         display: inline-block;
-        margin-bottom:5%;
+        margin-bottom:3%;
     }
+    .name{
+        margin-bottom:3%;
+    }
+    .nit{
+        margin-bottom: 3%;
+        display: inline-block;
+        width: 40%;
+    }
+    .dire{
+        margin-bottom: 3%;
+        display: inline-block;
+        width: 58%;
+    }
+    .asun{
+        margin-bottom:3%;
+    }
+
+
+    .inname{
+        height: 4vh;
+        width: 95%;
+        outline: 0;
+        border: none;
+        font-size: 1.4vw;
+        padding-left:5%;
+        -webkit-box-shadow: 13px 13px 0px -10px rgba(0,0,0,0.25);
+        -moz-box-shadow: 13px 13px 0px -10px rgba(0,0,0,0.25);
+        box-shadow: 13px 13px 0px -10px rgba(0,0,0,0.25);
+    }
+
+    .innit{
+        height: 4vh;
+        width: 80%;
+        outline: 0;
+        border: none;
+        font-size: 1.4vw;
+        padding-left:12%;
+        -webkit-box-shadow: 13px 13px 0px -10px rgba(0,0,0,0.25);
+        -moz-box-shadow: 13px 13px 0px -10px rgba(0,0,0,0.25);
+        box-shadow: 13px 13px 0px -10px rgba(0,0,0,0.25);
+    }
+
+    .indirec{
+        height: 4vh;
+        width: 94%;
+        outline: 0;
+        border: none;
+        font-size: 1.4vw;
+        padding-left:9.5%;
+        -webkit-box-shadow: 13px 13px 0px -10px rgba(0,0,0,0.25);
+        -moz-box-shadow: 13px 13px 0px -10px rgba(0,0,0,0.25);
+        box-shadow: 13px 13px 0px -10px rgba(0,0,0,0.25);
+    }
+
+    .otrainfo{
+        width: 100%;
+        -webkit-box-shadow: 13px 13px 0px -10px rgba(0,0,0,0.25);
+        -moz-box-shadow: 13px 13px 0px -10px rgba(0,0,0,0.25);
+        box-shadow: 13px 13px 0px -10px rgba(0,0,0,0.25);
+        display: inline-block;
+        margin-bottom:3%;
+    }
+
     .boxfecha{
         width: 40%;
         margin-left: 5%;
@@ -197,14 +261,65 @@
     .radicar{
         font-size: 1.4vw;
         color: #c6c6c5;
+        margin-bottom: 2%;
+    }
+    .boximgs{
+
+    }
+    .scanner{
+        bottom:0;
+        right: 40%;
+        width: 25%;
+        position: absolute;
+    }
+    .impresora{
+        top: 0;
+        right: 5%;
+        width: 21%;
+        position: absolute;
+    }
+    .b1{
+        display: inline-block;
+        width: 55%;
+        height: 4.2vh;
+        position: relative;
+    }
+    .b2{
+        display: inline-block;
+        width: 42%;
+        margin-left: 2%;
+        border-radius: 5px;
+        background-color: #3c3c3b;
+        vertical-align: top;
+    }
+    .btnradica{
+        text-align: center;
+        color: white;
+        font-size: 1.4vw;
+        margin-bottom: 3%;
+        margin-top: 3%;
+        cursor: pointer;
+    }
+    .btnimpri{
+        width: 20%;
+        margin-left: 40%;
+        border-radius: 5px;
+        margin-top: 2.5%;
+        background-color: #9C9C9C;
+        cursor: pointer;
+    }
+    .impri{
+        text-align: center;
         margin-bottom: 1%;
-        border: solid black 1px;
+        font-size:1.5vh;
+        color: white;
     }
 
 
 </style>
 
 <div class="modal"  ng-show="entrada == true" ng-init="entrada = true ">
+    <!--<div style="position: absolute; width: 100%; height: 100%" class="x" ng-click="entrada=false"> hola</div>-->
     <!--<div style="width: 400px;height: 400px;background-color: #fff;" ng-click="entrada = false"></div>-->
     <div class="hoja">
         <div class="conthoja">
@@ -241,10 +356,76 @@
                 </div>
 
                 <div class="radicar">
-                    <label style="border: solid green 1px; display: inline-block">Radicar documentos en bloque</label>
+                    <label >Radicar documentos en bloque</label>
                     <input id="cmn-toggle-1" class="cmn-toggle cmn-toggle-round" type="checkbox">
                     <label for="cmn-toggle-1" style="display: inline-block; margin-left:28%" ></label>
                 </div>
+
+                <div class="otrainfo">
+                    <select style=" outline: 0;">
+                        <option disabled selected>Empresa que Radica</option>
+                        <option >Saab</option>
+                        <option >Mercedes</option>
+                        <option >Audi</option>
+                    </select>
+                </div>
+
+                <div class="otrainfo">
+                    <select style=" outline: 0;">
+                        <option disabled selected>Responsable</option>
+                        <option >Saab</option>
+                        <option >Mercedes</option>
+                        <option >Audi</option>
+                    </select>
+                </div>
+
+                <div class="otrainfo">
+                    <select style=" outline: 0;">
+                        <option disabled selected>Proveedor</option>
+                        <option >Saab</option>
+                        <option >Mercedes</option>
+                        <option >Audi</option>
+                    </select>
+                </div>
+
+                <div class="name">
+                    <input type="text" placeholder="Nombre..." class="inname">
+                </div>
+
+                <div class="nit">
+                    <input type="text" placeholder="Nit..." class="innit">
+                </div><!--
+
+             --><div class="dire">
+                    <input type="text" placeholder="Dirección.." class="indirec">
+                </div>
+
+                <div class="asun">
+                    <input type="text" placeholder="Asunto" class="inname">
+                </div>
+
+                <div class="nit">
+                    <input type="text" placeholder="Medio Recepción..." class="innit">
+                </div><!--
+
+             --><div class="dire">
+                <input type="text" placeholder="Guia..." class="indirec">
+                </div>
+
+                <div class="boximgs">
+                    <div class="b1">
+                        <img src="img/scanner.png" class="scanner">
+                        <img src="img/impresora.png" class="impresora">
+                    </div>
+                    <div class="b2">
+                        <p class="btnradica">Radicar</p>
+                    </div>
+                </div>
+
+                <div class="btnimpri">
+                    <p class="impri">Imprimir</p>
+                </div>
+
 
             </div>
         </div>
