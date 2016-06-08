@@ -1,24 +1,7 @@
-
+<meta charset="utf-8">
 <link rel="navbar" href="navbar.html">
 <link rel="stylesheet" href="stylesheet/style.css">
 
-    <meta charset="utf-8">
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="stylesheet/jquery-2.2.3.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('.modalnuevo').hide();
-            $('.radicarentrada').click(function(){
-                $('.modalnuevo').show();
-            });
-            $('.x').click(function(){
-                $('.modalnuevo').hide();
-            });
-            $('.fecha').dateDropper();
-            $('.hora').timeDropper();
-        });
-
-    </script>
 <style>
     .modalnuevo{
         position: fixed;
@@ -31,7 +14,7 @@
     }
     .fondo{
         background-image: url("img/caja_hoja.png");
-        background-size: 100%;
+        background-size: 100% 98%;
         background-repeat: no-repeat;
         width: 100%;
         height: 100%;
@@ -102,9 +85,9 @@
         margin-left: 7%;
     }
     .submit{
-        -webkit-box-shadow: none;
-        -moz-box-shadow: none;
-        box-shadow: none;
+        -webkit-box-shadow: none !important;
+        -moz-box-shadow: none !important;
+        box-shadow: none !important;
         font-size: 3vh;
     }
     .asunto{
@@ -133,6 +116,18 @@
         height: 8.9vh;
         text-align: center;
     }
+    .radicarentrada{
+        float: right;
+        margin-right: 7%;
+        border-top: #95C11F solid;
+        color:#95C11F;
+        font-size: 30px;
+        margin-bottom: 0%;
+    }
+    .radicarentrada:hover{
+        color: #c6c6c5 !important;
+        border-color: #c6c6c5 !important;
+    }
 </style>
 
 <div class="contenidocentral">
@@ -157,11 +152,11 @@
     <div class="cuadros"></div>
     <div class="cuadros"></div>
 </div>
-<div style="float: right; margin-right: 7%;border-top: #95C11F solid;: #95C11F solid; color:#95C11F; font-size: 30px; margin-bottom: 0%;" class="radicarentrada" ng-click="entrada=true">
+<div class="radicarentrada" ng-click="entrada=true">
     <label>HACER SOLICITUD</label>
 </div>
 
-<!--<div class="modalnuevo" ng-show="entrada == true">-->
+<div class="modalnuevo" ng-show="entrada == true">
 
 <div class="modalnuevo" style="display: block">
 
@@ -201,4 +196,4 @@
 
     </div>
 </div>
-<!--</div>-->
+</div>

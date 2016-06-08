@@ -1,13 +1,221 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-
     <meta charset="UTF-8">
 
     <link rel="navbar" href="navbar.html">
     <link rel="stylesheet" href="stylesheet/style.css">
-</head>
-<body>
+<style>
+    .icononuevo{
+        margin-left: 45vw;
+        height: 6vh;
+        width: 4vw;
+    }
+    .icononuevo2{
+        height: 6vh;
+        width: 5vw;
+    }
+    .titulos{
+        margin-left: 10vw;
+    }
+    .modalnuevo{
+        position: fixed;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.3);
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+    }
+    .fondo{
+        background-image: url("img/caja_hoja.png");
+        background-size: 100% 98%;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        margin-left: 40%;
+        margin-top: 1vh;
+        position: absolute;
+    }
+    .tituloactanueva{
+        margin-top: 15%;
+        margin-left: 6%;
+        border-bottom: #95C11F solid;
+        width: 43%;
+    }
+    /*input{*/
+    /*border: none;*/
+    /*height: 45px;*/
+    /*font-size: 20px;*/
+    /*color: #c6c6c5;*/
+    /*margin-top: 1%;*/
+    /*padding-left:15px;*/
+    /*}*/
+
+    form{
+        margin-left: 3%;
+        margin-top: 0%;
+        overflow-x: hidden;
+    }
+    .tipoacta{
+        width: 15vw;
+        margin-left: 5%;
+    }
+    .hora{
+        margin-left: 1%;
+        width: 8.7vw;
+    }
+    .act{
+        font-size: 10vh;
+    }
+    .spn {
+        font-size: 9vh;
+        float: left;
+    }
+    .formulario
+    {
+        width: 100%;
+        margin-top: 11vh;
+        margin-left: 3%;
+    }
+
+   .modalnuevo  input{
+        margin-top: 3%;
+        font-size: 2vh;
+        height: 4vh;
+        border: none;
+        padding-left: 1vw;
+        -webkit-box-shadow: 13px 13px 0px -10px rgba(0,0,0,0.25);
+        -moz-box-shadow: 13px 13px 0px -10px rgba(0,0,0,0.25);
+        box-shadow: 13px 13px 0px -10px rgba(0,0,0,0.25);
+    }
+    select{
+        margin-top: 3%;
+        font-family: kenyan;
+        color: #9C9C9C;
+        font-size: 2vh;
+        height: 4vh;
+        background: url("img/desplegar_verde.png");
+        background-size: 20px;
+        background-repeat: no-repeat;
+        border: none;
+        -webkit-appearance: none;
+        background-position-x: 97%;
+        background-position-y: 10px;
+        background-color: white;
+        padding-right: 5px;
+        padding-left: 15px;
+        -webkit-box-shadow: 13px 13px 0px -10px rgba(0,0,0,0.25);
+        -moz-box-shadow: 13px 13px 0px -10px rgba(0,0,0,0.25);
+        box-shadow: 13px 13px 0px -10px rgba(0,0,0,0.25);
+    }
+
+    .asunto{
+        width: 100%;
+    }
+    .dependencia{
+        width: 28vw;
+        margin-left: 0%;
+    }
+    .dependenciaentrada{
+        width: 15vw;
+        margin-left: 5%;
+    }
+    .cometarios{
+        margin-top: 3%;
+        width: 27vw;
+        height: 15vh;
+        max-height: 15vh;
+        max-width: 27vw;
+        -webkit-box-shadow: 13px 13px 0px -10px rgba(0,0,0,0.25);
+        -moz-box-shadow: 13px 13px 0px -10px rgba(0,0,0,0.25);
+        box-shadow: 13px 13px 0px -10px rgba(0,0,0,0.25);
+        border: none;
+        padding-left: 15px;
+        font-family: kenyan;
+        padding-top: 10px;
+        font-size: 2vh;
+    }
+    .numerosolicitud{
+        width: 10vw;
+        height: 8.9vh;
+        text-align: center;
+    }
+    .act1{
+        font-size: 5vh;
+    }
+    .spn1{
+        font-size: 7vh;
+        float: left;
+    }
+    .formularioentrada{
+        margin-top: 1vh;
+    }
+    .empresa{
+        width: 25.7vw;
+        margin-left: 5%;
+    }
+    .responsable {
+        width: 25.7vw;
+        margin-left: 5%;
+    }
+    .proveedor {
+        width: 25.7vw;
+        margin-left: 5%;
+    }
+    .nombre {
+        width: 24.7vw;
+        margin-left: 5%;
+    }
+    .asuntoentrada
+    {
+        margin-left: 5%;
+        width: 24.8vw;
+    }
+    .nitnuevaentrega {
+        width: 11vw;
+        margin-left: 5%;
+    }
+    .recepcion {
+        width: 11vw;
+        margin-left: 5%;
+    }
+    .radicar {
+        margin-top: 1%;
+        font-size: 3vh;
+        color: #c6c6c5;
+        margin-bottom: 0%;
+        margin-left: 5%;
+    }
+    .tituloactanuevaentrada {
+        margin-top: 15%;
+        margin-left: 7%;
+        border-bottom: #95C11F solid;
+        width: 32%;
+        height: 14vh;
+    }
+    .iconosnuevaentrada {
+        margin-left: 11%;
+        position: relative;
+    }
+    .submitnuevaentrada {
+        border-radius: 10px;
+        background-color: #3c3c3b;
+        color: white;
+        padding-left: 15% !important;
+        padding-right: 15%;
+        text-align: center;
+        vertical-align: middle;
+        margin-top: 7% !important;
+        font-family: kenyan;
+        letter-spacing: 1px;
+        padding-top: 2%;
+        padding-bottom: 10%;
+        float: right;
+        margin-right: 7.5%;
+        -webkit-box-shadow: none !important;
+        -moz-box-shadow: none !important;
+        box-shadow: none !important;
+        font-size: 3vh !important;
+    }
+</style>
 
 <div class="contenidocentral">
     <div class="busqueda">
@@ -15,11 +223,11 @@
         <label style="font-size: 60px;margin-top: 17px"> Archivados </label>
         <div class="lineas2"></div>
 
-        <img src="img/iconos-20.png" class="icononuevo">
+        <img src="img/iconos-20.png" class="icononuevo"  ng-click="archivado=true">
         <img src="img/iconos-21.png" class="icononuevo2">
     </div>
 
-    <div style="color: #95C11F;font-size: 25px">
+    <div style="color: #95C11F;font-size: 25px; width: 75vw; margin-top: 3vh;">
         <label class="titulos"></label>
         <label class="titulos">Dependencia</label>
         <label class="titulos">Fecha</label>
@@ -34,5 +242,129 @@
     <div class="cuadros"></div>
 </div>
 
-</body>
-</html>
+    <div class="modalnuevo" ng-show="archivado == true">
+        <div class="modalnuevo" style="display: block">
+
+            <div style="position: absolute; width: 100%; height: 100%" class="x" ng-click="archivado=false"></div>
+            <div class="fondo" style="width: 30%">
+
+                <div class="tituloactanuevaentrada">
+                    <label class="act1">Radicado de<span class="spn1">ENTRADA</span></label>
+                </div>
+                <div class="formularioentrada">
+                    <form ng-submit="uploadPic2(adjunto)">
+
+                        <select class="tipoacta" ng-model="tipoactaradicadoentrada">
+                            <option value="">Tipo de Documento</option>
+                            <option value="facturas">Facturas</option>
+                            <option value="caja menor">Caja menor</option>
+                            <option value="legalizacion">Legalización</option>
+                            <option value="solicitudes">Solicitudes</option>
+                            <option value="cuentas de cobro">Cuentas de cobro</option>
+                            <option value="pagares">Pagares</option>
+
+                        </select>
+
+                        <input type="text" id="departure" placeholder="DD-MM-AA" class="textbox-n fechanuevaentrega" ng-model="fecharadicadoentrada" />
+                        <br>
+
+
+                        <select class="dependenciaentrada" ng-model="dependenciaradicadoentrada">
+                            <option value="">Dependencia</option>
+                            <option value="gerencia">Gerencia </option>
+                            <option value="administrativa">Administrativa </option>
+                            <option value="ambiente fisico">Ambiente físico </option>
+                            <option value="contabilidad">Contabilidad </option>
+                            <option value="nomina ">Nómina </option>
+                            <option value="talento humano">Talento humano </option>
+
+                        </select>
+
+
+                        <input type="text" id="alarm" class="form-control input-small horanuevaentrega "  placeholder="Hora"  ng-model="horaradicadoentrada"/>
+                        <!--<input type="text" class="hora" ng-model="horaradicadoentrada" placeholder="Hora" onfocus="(this.type='time')">-->
+
+
+
+                        <div class="radicar">
+                            <label>Radicar documentos en bloque</label>
+
+                            <input id="cmn-toggle-1" class="cmn-toggle cmn-toggle-round" type="checkbox">
+                            <label for="cmn-toggle-1" style="float: right;margin-top: 3%;margin-right: 6.5%;"></label>
+
+                        </div>
+
+                        <select class="empresa" ng-model="empresaradicadoentrada">
+                            <option value="">Empresa que Radica</option>
+                            <option value="ips llanos">Ips llanos</option>
+                            <option value="cafetero">Cafetero</option>
+                            <option value="norte de Santander">Norte de Santander</option>
+                            <option value="Barranquilla">Barranquilla</option>
+                            <option value="nuestra ips">Nuestra ips</option>
+                        </select>
+
+
+                        <select class="responsable" ng-model="responsableradicadoentrada">
+                            <option value="" >Responsable</option>
+                            <option value="auxiliares contables">Auxiliares contables</option>
+                            <option value="auxiliares administrativos">Auxiliares administrativos</option>
+
+                        </select>
+
+
+
+                        <select class="proveedor" ng-model="proveedorradicadoentrada">
+                            <option value=""> Proveedor</option>
+                            <option value="Softplus">Softplus</option>
+                            <option value="Sael">Sael</option>
+                            <option value="Cano Asociados">Cano Asociados</option>
+
+                        </select>
+
+
+
+                        <input type="text" placeholder="Nombre..." class="nombre" ng-model="nombreradicadoentrada">
+
+
+                        <input type="text" placeholder="Nit..." class="nitnuevaentrega" ng-model="nitradicadoentrada"><input type="text" placeholder="Dirección..." class="direccion" ng-model="direccionradicadoentrada">
+
+
+
+                        <input type="text" placeholder="Asunto..." class="asuntoentrada" ng-model="asuntoradicadoentrada">
+
+
+                        <input type="text" placeholder="Medio recepción" class="recepcion" ng-model="recepcionradicadoentrada"><input type="text" placeholder="Guia..." class="guia" ng-model="guiaradicadoentrada">
+
+                        <div class="iconosnuevaentrada">
+                            <!--<md-button class="md-fab md-fab-top-left left scanner" aria-label="Insert Drive" >-->
+                            <!--<label for="input-file-id">-->
+                            <!--<md-icon md-svg-src="/images/escanner.svg" style="width: 30px; height: 30px;"></md-icon>-->
+                            <!--</label>-->
+                            <!--<md-tooltip md-visible="demo.showTooltip" md-direction="{{demo.tipDirection}}">-->
+                            <!--Escanear-->
+                            <!--</md-tooltip>-->
+                            <!--</md-button>-->
+
+                            <!--<input ngf-select type="file" ng-model="adjunto" class="ng-hide" id="input-file-id">-->
+
+                            <!--<md-button class="md-fab md-fab-top-left left impreso" aria-label="Insert Drive" >-->
+
+                            <!--<md-icon md-svg-src="/images/impresora.svg" style="width: 30px; height: 30px;"></md-icon>-->
+
+                            <!--<md-tooltip md-visible="demo.showTooltip2" md-direction="{{demo.tipDirection2}}">-->
+                            <!--Imprimir-->
+                            <!--</md-tooltip>-->
+                            <!--</md-button>-->
+
+                            <img src="img/scanner.png" class="scanner">
+                            <img src="img/impresora.png" class="impresora">
+                            <input type="submit" value="RADICAR" class="submitnuevaentrada">
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </div>

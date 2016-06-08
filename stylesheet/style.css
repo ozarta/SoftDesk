@@ -366,9 +366,7 @@ input.cmn-toggle-round:checked + label:after {
     border-bottom: #c6c6c5 solid;
     border-right: #c6c6c5 solid;
 }
-.formularioentrada{
-    margin-top: 11%;
-}
+
 .fechanuevaentrega{
     width:30%;
     margin-left: 2.5%;
